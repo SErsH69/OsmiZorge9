@@ -1,0 +1,139 @@
+.park_wrapper {
+    .hover_bl {
+        max-width: 1750px !important;
+        &.hidden:not(.active) {
+            display: none;
+        }
+    }
+    .hover_bl__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        .room_center__rl {
+            &--li {
+                display: flex;
+                text-align: left;
+                text-decoration: none;
+                align-items: center;
+                text-transform: uppercase;
+                font-family: 'gm', serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            &--img {
+                margin-right: 30px;
+            }
+            &--title {
+                text-transform: uppercase;
+                font-family: 'gm', serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.parking_white3 {
+    .parking_white__l--list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        li {
+            font-family: 'gm', serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 35px;
+            @media all and (max-width: 960px) {
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+            margin-left: 30px;
+            transition: all .3s ease-out;
+            background-image: linear-gradient(#957B61, #957B61);
+            background-position: 0% 95%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            padding-bottom: 4px;
+            &:hover {     
+                background-size: 100% 2px;
+                color: #957B61;
+            }
+            @media all and (max-width: 960px) {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+            &.active {
+                background-size: 100% 2px;
+                color: #957B61;
+            }
+        }
+    }
+    .dlc1, .dlc2, .dlc3, .dlc4, .dlc5, .dlc6, .dlc7, .dlc8 {
+        cursor: pointer;
+        transition: all .3s ease-out;
+        &.active {
+            fill: black;
+        }
+        &:hover {
+            fill: black;
+        }
+    }
+}
+.kladovie_page {
+    overflow-x: hidden;
+}
+.park_wrapper {
+    position: relative;
+}
+.park_form, .park_form2, .park_form3, .park_form4, .park_form5, .park_form6, .park_form7 {
+    position: absolute;
+    transition: all .3s ease-out;
+    top: 0;
+    transform: translateX(100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 90;
+    height: 100%;
+    &.active {
+        transform: translateX(0%);
+    }
+}
+.main_head__center--backr {
+    cursor: pointer;
+}
+.main_head__top.fixed {
+    z-index: 100;
+}
+.komc_in_white  {
+    .hover_bl__block--link {
+        max-width: 275px;
+        font-size: vw(24);
+    }
+}
+@media all and (max-width: 960px) {
+    .park_wrapper .hover_bl__block .room_center__rl--title {
+        font-size: 14px;
+    }
+    .park_wrapper .hover_bl__block .room_center__rl--img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+}

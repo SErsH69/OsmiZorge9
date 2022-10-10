@@ -1,0 +1,93 @@
+.footer {
+    padding-top: 120px;
+    @media all and (max-width: 680px) {
+        padding-top: 80px;
+    }
+    &__in {
+        border-top: 1px solid #C4C4C4;
+        padding: 80px;
+        @media all and (max-width: 680px) {
+            padding-top: 60px;
+            padding-bottom: 28px; 
+            padding-left: 10px;
+            padding-right: 10px;  
+        }
+    }
+    &__tel {
+        text-decoration: none;
+        font-family: 'gm', serif;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+        display: none;
+        @media all and (max-width: 960px) {
+            display: block;
+        }
+    }
+    &__btn {
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: 'gm', serif;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        color: #957B61;
+        display: none;
+        @media all and (max-width: 960px) {
+            display: block;
+        }
+    }
+    &__menu {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+                width: 20% !important;
+                @media all and (max-width: 1023px) {
+                    width: 50% !important;
+                }
+                @media all and (max-width: 680px) {
+                    width: 100% !important;
+                    text-align: center;
+                }
+                a {
+                    padding: 0 3px;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-family: 'gm', serif;
+                    font-size: 18px;    
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    display: block;
+                    margin-bottom: 20px;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 1px;
+                    transition: background-size .3s;
+                    padding-bottom: 3px;
+                    display: inline-block;
+                    &:hover {
+                        background-size: 100% 1px;
+                    }
+                    @media all and (max-width: 680px) {
+                        text-align: center;
+                        margin-bottom: 32px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ap_page .footer {
+    padding-top: 0;
+}
